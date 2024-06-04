@@ -1,11 +1,11 @@
 import {useEffect, useState} from "react"
 
 export default function App() {
-    let [intervalState, setIntervalState] = useState((new Date((new Date("2023-12-25T08:00:00")).getTime() >= (new Date()).getTime() ? "2023-12-25T08:00:00" : "2024-02-26T08:00:00").getTime()) - (new Date()).getTime())
+    let [intervalState, setIntervalState] = useState((new Date((new Date("2023-12-25T08:00:00")).getTime() >= (new Date()).getTime() ? "2023-12-25T08:00:00" : "2024-02-19T15:00:00").getTime()) - (new Date()).getTime())
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setIntervalState((new Date((new Date("2023-12-25T08:00:00")).getTime() >= (new Date()).getTime() ? "2023-12-25T08:00:00" : "2024-02-26T08:00:00").getTime()) - (new Date()).getTime())
+            setIntervalState((new Date((new Date("2023-12-25T08:00:00")).getTime() >= (new Date()).getTime() ? "2023-12-25T08:00:00" : "2024-02-19T15:00:00").getTime()) - (new Date()).getTime())
         }, 1000)
         return () => clearInterval(interval)
     }, [])
@@ -41,7 +41,7 @@ export default function App() {
                 </div>
             </section>
 
-            <p>before returning to the office.</p>
+            <p>before leaving IUT.</p>
         </main>
     )
 }
